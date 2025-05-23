@@ -1,0 +1,42 @@
+{
+    "fireball": {
+        "id": "fireball",
+        "name": "Fireball",
+        "type": "spell",
+        "mana_cost": 20,
+        "damage": 25,
+        "defense": 0,
+        "effect": "A ball of magical fire that explodes on impact.",
+        "description": "A basic offensive spell that launches a ball of magical fire at your target."
+    },
+    "shield": {
+        "id": "shield",
+        "name": "Shield",
+        "type": "spell",
+        "mana_cost": 15,
+        "damage": 0,
+        "defense": 10,
+        "effect": "Creates a magical barrier that reduces incoming damage.",
+        "description": "A defensive spell that creates a protective magical barrier around you."
+    },
+    "meteor": {
+        "id": "meteor",
+        "name": "Meteor",
+        "type": "spell",
+        "mana_cost": 40,
+        "damage": 50,
+        "defense": 0,
+        "effect": "Summons a meteor from the heavens to strike your target.",
+        "description": "A powerful offensive spell that calls down a meteor from the sky."
+    },
+    "time_stop": {
+        "id": "time_stop",
+        "name": "Time Stop",
+        "type": "spell",
+        "mana_cost": 60,
+        "damage": 0,
+        "defense": 0,
+        "effect": "Briefly stops time, allowing you to act while others are frozen.",
+        "description": "An advanced spell that temporarily stops the flow of time around you."
+    }
+} 

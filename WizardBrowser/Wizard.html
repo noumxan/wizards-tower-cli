@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard's Tower Trial Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Wizard.css">
+</head>
+<body>
+    <!-- HUD Container -->
+    <div class="hud-container">
+        <div class="status-bars">
+            <div class="status-group">
+                <div class="status-label">Health</div>
+                <div class="status-bar health-bar">
+                    <div class="status-bar-fill" style="--health-percent: 100%"></div>
+                    <span id="healthValue" class="status-bar-value">100/100</span>
+                </div>
+            </div>
+            <div class="status-group">
+                <div class="status-label">Mana</div>
+                <div class="status-bar mana-bar">
+                    <div class="status-bar-fill" style="--mana-percent: 100%"></div>
+                    <span id="manaValue" class="status-bar-value">100/100</span>
+                </div>
+            </div>
+        </div>
+        <div class="spell-list" id="spellList"></div>
+        <div class="inventory-hud" id="inventoryHud"></div>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="game-container">
+        <h1 class="title-header">Wizard's Tower Trial Adventure</h1>
+
+        <div id="output"><!-- Cutscenes, dialogue, and hints will appear here. --></div>
+
+        <div class="input-area flex">
+            <input type="text" id="commandInput" placeholder="Enter command (e.g., go north, look, cast spell, dodge)">
+            <button onclick="processCommand()">Enter</button>
+        </div>
+
+        <!-- Save/Load Indicators -->
+        <div id="saveIndicator" class="save-indicator" style="display: none;"></div>
+        
+        <!-- Hazard Warning -->
+        <div id="hazardWarning" class="hazard-warning" style="display: none;"></div>
+        
+        <!-- Guardian Path Visualization -->
+        <div id="guardianPath" class="guardian-path" style="display: none;"></div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="gameData.js"></script>
+    <script>
+        // UI and initialization code only. Do not redeclare gameData here.
+        // Cutscene and hint messages use .cutscene-message and .hint-message classes for styling.
+    </script>
+</body>
+</html>

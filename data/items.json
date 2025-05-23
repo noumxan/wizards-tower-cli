@@ -1,0 +1,51 @@
+{
+    "tome_basic": {
+        "id": "tome_basic",
+        "name": "Basic Spell Tome",
+        "type": "tome",
+        "effect": null,
+        "description": "An ancient tome containing the basic principles of spellcasting. The pages glow with a faint blue light."
+    },
+    "tome_advanced": {
+        "id": "tome_advanced",
+        "name": "Advanced Spell Tome",
+        "type": "tome",
+        "effect": null,
+        "description": "A more complex tome that delves into advanced magical theory. The cover is bound in dragon leather."
+    },
+    "spell_scroll": {
+        "id": "spell_scroll",
+        "name": "Spell Scroll",
+        "type": "scroll",
+        "effect": null,
+        "description": "A scroll containing a powerful spell. The parchment crackles with magical energy."
+    },
+    "health_potion": {
+        "id": "health_potion",
+        "name": "Health Potion",
+        "type": "potion",
+        "effect": 30,
+        "description": "A red potion that restores health when consumed. The liquid bubbles gently."
+    },
+    "mana_potion": {
+        "id": "mana_potion",
+        "name": "Mana Potion",
+        "type": "potion",
+        "effect": 30,
+        "description": "A blue potion that restores magical energy. It glows with an inner light."
+    },
+    "star_crystal": {
+        "id": "star_crystal",
+        "name": "Star Crystal",
+        "type": "crystal",
+        "effect": null,
+        "description": "A crystal that seems to contain a piece of the night sky. Stars twinkle within its depths."
+    },
+    "mana_essence": {
+        "id": "mana_essence",
+        "name": "Mana Essence",
+        "type": "essence",
+        "effect": 50,
+        "description": "Pure magical energy in liquid form. It shimmers with all the colors of the rainbow."
+    }
+} 

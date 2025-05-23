@@ -1,0 +1,132 @@
+{
+    "entrance": {
+        "id": "entrance",
+        "name": "Tower Entrance",
+        "description": "You stand before the grand entrance of the ancient wizard's tower. The massive stone doors are adorned with magical runes that glow faintly in the dim light. A gentle breeze carries the scent of old books and arcane energy.",
+        "exits": {
+            "north": "lobby",
+            "east": "garden"
+        },
+        "items": ["tome_basic"],
+        "guardian": null,
+        "hazards": [],
+        "puzzle": null
+    },
+    "lobby": {
+        "id": "lobby",
+        "name": "Grand Lobby",
+        "description": "The grand lobby of the tower stretches before you. Marble floors reflect the light from magical torches that float near the ceiling. Ancient tapestries line the walls, depicting scenes of magical battles and legendary wizards.",
+        "exits": {
+            "south": "entrance",
+            "up": "library"
+        },
+        "items": [],
+        "guardian": {
+            "name": "Guardian of the Gate",
+            "health": 50,
+            "attack": 15,
+            "defense": 5,
+            "special_ability": "magic_resistance",
+            "ai_type": "stationary",
+            "ai_range": 1
+        },
+        "hazards": [],
+        "puzzle": null
+    },
+    "library": {
+        "id": "library",
+        "name": "Arcane Library",
+        "description": "Rows of ancient bookshelves tower above you, filled with countless tomes and scrolls. The air is thick with the smell of old parchment and magical energy. A large reading table sits in the center of the room.",
+        "exits": {
+            "down": "lobby",
+            "up": "laboratory"
+        },
+        "items": ["spell_scroll", "tome_advanced"],
+        "guardian": null,
+        "hazards": [],
+        "puzzle": {
+            "type": "spell_combination",
+            "required_items": ["tome_basic", "tome_advanced"],
+            "reward": "shield",
+            "alternate_solution": null
+        }
+    },
+    "laboratory": {
+        "id": "laboratory",
+        "name": "Alchemical Laboratory",
+        "description": "The laboratory is filled with bubbling potions, strange apparatus, and magical ingredients. Crystal vials line the walls, each containing a different colored liquid that pulses with magical energy.",
+        "exits": {
+            "down": "library",
+            "up": "observatory"
+        },
+        "items": ["health_potion", "mana_potion"],
+        "guardian": {
+            "name": "Alchemical Guardian",
+            "health": 75,
+            "attack": 20,
+            "defense": 10,
+            "special_ability": "poison_cloud",
+            "ai_type": "pursuit",
+            "ai_range": 2
+        },
+        "hazards": [
+            {
+                "type": "poison_cloud",
+                "damage": 5,
+                "message": "A poisonous cloud drifts through the room!",
+                "interval": 3
+            }
+        ],
+        "puzzle": null
+    },
+    "observatory": {
+        "id": "observatory",
+        "name": "Astral Observatory",
+        "description": "The ceiling of this circular room is enchanted to show the night sky, with stars and planets moving in their eternal dance. Magical telescopes and astrolabes are arranged around the room.",
+        "exits": {
+            "down": "laboratory",
+            "up": "tower_crown"
+        },
+        "items": ["star_crystal"],
+        "guardian": null,
+        "hazards": [],
+        "puzzle": {
+            "type": "celestial_alignment",
+            "required_items": ["star_crystal"],
+            "reward": "meteor",
+            "alternate_solution": null
+        }
+    },
+    "tower_crown": {
+        "id": "tower_crown",
+        "name": "Tower Crown",
+        "description": "You have reached the highest chamber of the tower. The room is circular, with windows offering a breathtaking view of the surrounding landscape. The air crackles with magical energy.",
+        "exits": {
+            "down": "observatory"
+        },
+        "items": [],
+        "guardian": {
+            "name": "Archmage",
+            "health": 100,
+            "attack": 25,
+            "defense": 15,
+            "special_ability": "time_stop",
+            "ai_type": "stationary",
+            "ai_range": 1
+        },
+        "hazards": [],
+        "puzzle": null
+    },
+    "garden": {
+        "id": "garden",
+        "name": "Magical Garden",
+        "description": "A beautiful garden filled with magical plants and flowers. Some glow with inner light, while others seem to move of their own accord. A small fountain in the center bubbles with enchanted water.",
+        "exits": {
+            "west": "entrance"
+        },
+        "items": ["mana_essence"],
+        "guardian": null,
+        "hazards": [],
+        "puzzle": null
+    }
+} 
