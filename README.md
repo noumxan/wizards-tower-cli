@@ -71,7 +71,7 @@ python -m unittest test_game.py
 - `game_data.py`: Core data structures and models
 - `game_engine.py`: Game logic and state management
 - `test_game.py`: Unit tests for game mechanics
-
+# TODO: Refactor puzzle logic for multiple keys
 ## Original Game
 
 This is a CLI conversion of the original Wizard's Tower Trial game, which was implemented using HTML, CSS, and JavaScript. The original files are preserved in the repository.
